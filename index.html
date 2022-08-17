@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Work #3</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+
+  <body>
+    <!-- шапка -->
+
+    <header class="page-header">
+      <div class="container">
+        <nav class="nav">
+          <a class="logo" href="./index.html"
+            ><span class="logo-web">Web</span>Studio</a
+          >
+
+          <ul class="site-nav list">
+            <li class="item"><a href="./index.html" class="link">Студія</a></li>
+            <li class="item">
+              <a href="./portfolio.html" class="link">Портфоліо</a>
+            </li>
+            <li class="item"><a href="" class="link">Контакти</a></li>
+          </ul>
+        </nav>
+
+        <ul class="contacts-header list">
+          <li class="item">
+            <a href="mailto:info@devstudio.com" class="link"
+              ><svg class="icons envelope" width="16" height="16">
+                <use xlink:href="./images/sprite-icons.svg#envelope" ></use></svg
+              >info@devstudio.com</a
+            >
+          </li>
+          <li class="item">
+            <a href="tel:+380961111111" class="link"
+              ><svg class="icons smartphone" width="16" height="16">
+                <use xlink:href="./images/sprite-icons.svg#smartphone"></use></svg
+              >+38 096 111 11 11</a
+            >
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+      <!-- Баннер або реклама -->
+
+      <section class="hero">
+        <div class="container">
+          <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
+          <button type="button" class="hero-btn">Замовити послугу</button>
+        </div>
+      </section>
+
+      <!-- Особливості компанії -->
+
+      <section class="features">
+        <div class="container main">
+          <h2 class="section-title visually-hidden">Наші переваги</h2>
+
+          <ul class="list">
+            <li class="item">
+              <div class="icon-box">
+              <svg class="features-icons">
+                <use href="./images/sprite-icons.svg#antenna"></use>
+              </svg>
+              </div>
+              <h3 class="features-title">УВАГА ДО ДЕТАЛЕЙ</h3>
+              <p>
+                Ідейні міркування, і навіть початок повсякденної роботи з
+                формування позиції.
+              </p>
+            </li>
+            <li class="item">
+              <div class="icon-box">
+              <svg class="features-icons">
+                <use href="./images/sprite-icons.svg#clock"></use>
+              </svg>
+              </div>
+              <h3 class="features-title">ПУНКТУАЛЬНІСТЬ</h3>
+              <p>
+                Завдання організації, особливо рамки і місце навчання кадрів
+                тягне у себе.
+              </p>
+            </li>
+            <li class="item">
+              <div class="icon-box">
+              <svg class="features-icons">
+                <use href="./images/sprite-icons.svg#diagram"></use>
+              </svg>
+              </div>
+              <h3 class="features-title">ПЛАНУВАННЯ</h3>
+              <p>
+                Так само консультація з широким активом значною мірою зумовлює.
+              </p>
+            </li>
+            <li class="item">
+              <div class="icon-box">
+              <svg class="features-icons">
+                <use href="./images/sprite-icons.svg#astronaut"></use>
+              </svg>
+              </div>
+              <h3 class="features-title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
+              <p>
+                Значимість цих проблем настільки очевидна, що реалізація
+                планових завдань.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- праця -->
+
+      <section class="work">
+        <div class="container main">
+          <h2 class="section-title work-title">Чим ми займаємося</h2>
+
+          <ul class="list">
+            <li class="item">
+              <img
+                src="https://fstv-electro.github.io/goit-markup-hw-01/images/box1.jpg"
+                width="370"
+                alt="Робота за комп'ютером"
+              />
+            </li>
+            <li class="item">
+              <img
+                src="https://fstv-electro.github.io/goit-markup-hw-01/images/box2.jpg"
+                width="370"
+                alt="Робота за комп'ютером 2"
+              />
+            </li>
+            <li class="item">
+              <img
+                src="https://fstv-electro.github.io/goit-markup-hw-01/images/box3.jpg"
+                width="370"
+                alt="Робота за планшетом"
+              />
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- команда -->
+
+      <section class="team">
+        <div class="container">
+          <h2 class="section-title team-title">Наша команда</h2>
+          <ul class="list">
+            <li class="item">
+              <img
+                src="https://fstv-electro.github.io/goit-markup-hw-01/images/img1.jpg"
+                width="270"
+                alt="Чоловік в червоній сорочці"
+              />
+              <h3 class="name-title">Ігор Дем'яненко</h3>
+              <p>Product Designer</p>
+              <ul class="socials">
+                <li class="social-item">
+                  <a
+                    class="socials-links"
+                    href="https://www.instagram.com/"
+                    target="_blank"
+                    ><svg class="icons">
+                      <use
+                        href="./images/sprite-icons.svg#instagram"
+                      ></use></svg
+                  ></a>
+                </li>
+                <li class="social-item">
+                  <a
+                    class="socials-links"
+                    href="https://twitter.com/"
+                    target="_blank"
+                    ><svg class="icons">
+                      <use href="./images/sprite-icons.svg#twitter"></use></svg
+                  ></a>
+                </li>
+                <li class="social-item">
+                  <a
+                    class="socials-links"
+                    href="www.facebook.com"
+                    target="_blank"
+                    ><svg class="icons">
+                      <use href="./images/sprite-icons.svg#facebook"></use></svg
+                  ></a>
+                </li>
+                <li class="social-item">
+                  <a
+                    class="socials-links"
+                    href="https://linkedin.com/"
+                    target="_blank"
+                    ><svg class="icons">
+                      <use href="./images/sprite-icons.svg#linkedin"></use></svg
+                  ></a>
+                </li>
+              </ul>
+            </li>
+            <li class="item">
+              <img
+                src="https://fstv-electro.github.io/goit-markup-hw-01/images/img2.jpg"
+                width="270"
+                alt="Жінка в чорному піджаку"
+              />
+              <h3 class="name-title">Ольга Рєпіна</h3>
+              <p>Frontend Developer</p>
+              <ul class="socials">
+                <li>
+                  <a
+                    class="socials-links"
+                    href="https://www.instagram.com/"
+                    target="_blank"
+                    ><svg class="icons">
+                      <use
+                        href="./images/sprite-icons.svg#instagram"
+                      ></use></svg
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    class="socials-links"
+                    href="https://twitter.com/"
+                    target="_blank"
+                    ><svg class="icons">
+                      <use href="./images/sprite-icons.svg#twitter"></use></svg
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    class="socials-links"
+                    href="www.facebook.com"
+                    target="_blank"
+                    ><svg class="icons">
+                      <use href="./images/sprite-icons.svg#facebook"></use></svg
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    class="socials-links"
+                    href="https://linkedin.com/"
+                    target="_blank"
+                    ><svg class="icons">
+                      <use href="./images/sprite-icons.svg#linkedin"></use></svg
+                  ></a>
+                </li>
+              </ul>
+            </li>
+            <li class="item">
+              <img
+                src="https://fstv-electro.github.io/goit-markup-hw-01/images/img3.jpg"
+                width="270"
+                alt="Чоловік в блакитній сорочці"
+              />
+              <h3 class="name-title">Микола Тарасов</h3>
+              <p>Marketing</p>
+              <ul class="socials">
+                <li>
+                  <a
+                    class="socials-links"
+                    href="https://www.instagram.com/"
+                    target="_blank"
+                    ><svg class="icons">
+                      <use
+                        href="./images/sprite-icons.svg#instagram"
+                      ></use></svg
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    class="socials-links"
+                    href="https://twitter.com/"
+                    target="_blank"
+                    ><svg class="icons">
+                      <use href="./images/sprite-icons.svg#twitter"></use></svg
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    class="socials-links"
+                    href="www.facebook.com"
+                    target="_blank"
+                    ><svg class="icons">
+                      <use href="./images/sprite-icons.svg#facebook"></use></svg
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    class="socials-links"
+                    href="https://linkedin.com/"
+                    target="_blank"
+                    ><svg class="icons">
+                      <use href="./images/sprite-icons.svg#linkedin"></use></svg
+                  ></a>
+                </li>
+              </ul>
+            </li>
+            <li class="item">
+              <img
+                src="https://fstv-electro.github.io/goit-markup-hw-01/images/img4.jpg"
+                width="270"
+                alt="Чоловік в чорній футболці"
+              />
+              <h3 class="name-title">Михайло Єрмаков</h3>
+              <p>Designer</p>
+              <ul class="socials">
+                <li>
+                  <a
+                    class="socials-links"
+                    href="https://www.instagram.com/"
+                    target="_blank"
+                    ><svg class="icons">
+                      <use
+                        href="./images/sprite-icons.svg#instagram"
+                      ></use></svg
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    class="socials-links"
+                    href="https://twitter.com/"
+                    target="_blank"
+                    ><svg class="icons">
+                      <use href="./images/sprite-icons.svg#twitter"></use></svg
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    class="socials-links"
+                    href="www.facebook.com"
+                    target="_blank"
+                    ><svg class="icons">
+                      <use href="./images/sprite-icons.svg#facebook"></use></svg
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    class="socials-links"
+                    href="https://linkedin.com/"
+                    target="_blank"
+                    ><svg class="icons">
+                      <use href="./images/sprite-icons.svg#linkedin"></use></svg
+                  ></a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- клієнти -->
+
+      <section class="clients">
+        <div class="container">
+          <h2 class="section-title clients-title">Постійні клієнти</h2>
+          <ul class="list clients-list">
+            <li class="item">
+              <a class="clients-link" href="#" target="_blank"
+                ><svg class="icons" width="106" height="60">
+                  <use xlink:href="./images/sprite-icons.svg#logo"></use></svg
+              ></a>
+            </li>
+            <li class="item">
+              <a class="clients-link" href="#" target="_blank"
+                ><svg class="icons" width="106" height="60">
+                  <use xlink:href="./images/sprite-icons.svg#logo2"></use></svg
+              ></a>
+            </li>
+            <li class="item">
+              <a class="clients-link" href="#" target="_blank"
+                ><svg class="icons" width="106" height="60">
+                  <use xlink:href="./images/sprite-icons.svg#logo3"></use></svg
+              ></a>
+            </li>
+            <li class="item">
+              <a class="clients-link" href="#" target="_blank"
+                ><svg class="icons" width="106" height="60">
+                  <use xlink:href="./images/sprite-icons.svg#logo4"></use></svg
+              ></a>
+            </li>
+            <li class="item">
+              <a class="clients-link" href="#" target="_blank"
+                ><svg class="icons" width="106" height="60">
+                  <use xlink:href="./images/sprite-icons.svg#logo5"></use></svg
+              ></a>
+            </li>
+            <li class="item">
+              <a class="clients-link" href="#" target="_blank"
+                ><svg class="icons" width="106" height="60">
+                  <use xlink:href="./images/sprite-icons.svg#logo6"></use></svg
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <!-- підвал -->
+
+    <footer class="footer">
+      <div class="container">
+        <div class="logo-address">
+          <a class="logo" href="./index.html"
+            ><span class="logo-web">Web</span>Studio</a
+          >
+
+          <address>
+            <ul class="list">
+              <li class="footer-list">
+                <a
+                  href="https://goo.gl/maps/cwUCHpKbUyFMeZRM7"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  class="contacts-footer link"
+                  >м. Київ, пр-т Лесі Українки, 26</a
+                >
+              </li>
+              <li class="footer-list">
+                <a href="mailto:info@devstudio.com" class="contacts-footer link"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li class="footer-list">
+                <a href="tel:+380961111111" class="contacts-footer link"
+                  >+38 099 111 11 11</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div class="submit">
+          <p class="submit-title">Приєднуйтесь</p>
+          <ul class="socials">
+            <li class="item">
+              <a
+                class="socials-links"
+                href="https://www.instagram.com/"
+                target="_blank"
+                ><svg class="icons">
+                  <use href="./images/sprite-icons.svg#instagram"></use></svg
+              ></a>
+            </li>
+            <li class="item">
+              <a
+                class="socials-links"
+                href="https://twitter.com/"
+                target="_blank"
+                ><svg class="icons">
+                  <use href="./images/sprite-icons.svg#twitter"></use></svg
+              ></a>
+            </li>
+            <li class="item">
+              <a class="socials-links" href="www.facebook.com" target="_blank"
+                ><svg class="icons">
+                  <use href="./images/sprite-icons.svg#facebook"></use></svg
+              ></a>
+            </li>
+            <li class="item">
+              <a
+                class="socials-links"
+                href="https://linkedin.com/"
+                target="_blank"
+                ><svg class="icons">
+                  <use href="./images/sprite-icons.svg#linkedin"></use></svg
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
