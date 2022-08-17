@@ -148,7 +148,8 @@ img {
 }
 
 .page-header .current {
-  border-bottom: 2px solid var(--btn-blue-color);
+  border-bottom: 4px solid var(--btn-blue-color);
+  border-radius: 2px;
 }
 
 /* Посилання */
@@ -358,9 +359,9 @@ img {
   padding: 27px 0;
   width: 100%;
   height: 70px;
-  bottom:0;
-  left:50%;
-  transform: translate(-50%,0%);
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0%);
 
   font-weight: 700;
   font-size: 14px;
@@ -369,7 +370,7 @@ img {
   text-transform: uppercase;
 
   color: var(--bcg-white-color);
-  background-color: rgba(47, 48, 58,0.8);
+  background-color: rgba(47, 48, 58, 0.8);
 }
 
 /* Команда*/
@@ -719,4 +720,34 @@ img {
   line-height: 2;
   letter-spacing: 0.06em;
   margin-bottom: 4px;
+}
+
+.card-overlay {
+  position: relative;
+}
+
+.card-text-overlay {
+  position: absolute;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.55;
+  margin: 0;
+  padding: 32px 24px;
+  opacity: 0;
+
+  color: var(--bcg-white-color);
+  background-color: rgba(33, 150, 243, 0.9);
+}
+
+.card-text-overlay:hover,
+.card-text-overlay:focus {
+  opacity: 1;
 }
