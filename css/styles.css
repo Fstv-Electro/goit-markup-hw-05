@@ -118,7 +118,7 @@ img {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
-  color: var(--text-logo-color);
+  color: var(--text-logcurrento-color);
   text-decoration: none;
 
   margin-right: 93px;
@@ -724,6 +724,7 @@ img {
 
 .card-overlay {
   position: relative;
+  overflow: hidden;
 }
 
 .card-text-overlay {
@@ -732,22 +733,21 @@ img {
   width: 100%;
   height: 100%;
   top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
 
   font-weight: 400;
   font-size: 18px;
   line-height: 1.55;
   margin: 0;
   padding: 32px 24px;
-  opacity: 0;
+
+  transform: translateY(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   color: var(--bcg-white-color);
   background-color: rgba(33, 150, 243, 0.9);
 }
 
-.card-text-overlay:hover,
-.card-text-overlay:focus {
-  opacity: 1;
+.card-overlay:hover .card-text-overlay,
+.card-overlay .card-text-overlay:focus {
+  transform: translateY(0);
 }
