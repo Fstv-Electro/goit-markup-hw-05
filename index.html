@@ -61,12 +61,22 @@
     </header>
 
     <main>
-      <!-- Баннер або реклама -->
+      <!-- Герой та бекдроп -->
 
       <section class="hero">
         <div class="container">
           <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-          <button type="button" class="hero-btn">Замовити послугу</button>
+          <button type="button" class="hero-btn" data-modal-open>Замовити послугу</button>
+        </div>
+        <div class="backdrop is-hidden" data-modal>
+          <div class="modal">
+            <button type="button" class="hero-btn-close" data-modal-close>
+              <svg class="btn-close-svg" width="11" height="11">
+                <use href="./images/sprite-icons.svg#vector">
+                </use>
+              </svg>
+            </button>
+          </div>
         </div>
       </section>
 
@@ -501,5 +511,8 @@
         </div>
       </div>
     </footer>
+
+    <script src="./js/modal.js"></script>
+
   </body>
 </html>
